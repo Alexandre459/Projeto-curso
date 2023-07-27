@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    border: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+li:hover {
+    color: #4371F0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    background-color: #181920;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
+
+.corpo {
+    width: 355px;
+    height: 350px;
+    padding: 20px;
+    position: relative;
+    align-items: center;
+    margin: 125px 500px;
+    background-color: #181920;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    background-color: #181920;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    margin-top: 12px;
+    border-radius: 8px;
+    color: #000;
+    height: 45px;
+    outline: none;
+    align-items: center;
+    background-color: #fff;
+}
+
+textarea {
+    color: #000;
+    margin-top: 12px;
+    border: none;
+    outline: none;
+    height: 100%;
+    max-height: 75px;
+    border-radius: 8px;
+    background-color: #fff;
+    resize: vertical;
+}
+
+button {
+    background-color: #4371F0;
+    border-radius: 8px;
+    color: white;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    height: 45px;
+    transition: 0.8s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #4371F0;
+}
+
+button:disabled {
+    background-color: #aaa;
+    color: #fff;
+    cursor: auto;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
