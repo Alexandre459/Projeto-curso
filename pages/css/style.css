@@ -45,6 +45,17 @@ li:hover {
     height: auto;
 }
 
+.usuario {
+    width: 175px;
+    height: 70px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #181920;
+    color: white;
+}
+
 #banner {
     background-image: url(https://disneyplusbrasil.com.br/wp-content/uploads/2022/02/Vingadores-Ultimato-Disney-Plus.jpg);
     background-position: 50% 50%;
@@ -231,6 +242,23 @@ span {
     }
 
 }
+
+.social-media {
+    width: 133px;
+    height: 65px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.github {
+    height: 50px;
+}
+
+.discord {
+    height: 50px;
+    border-radius: 10px;
+}
+
 
 @media (max-width: 920px) {
     .banner {

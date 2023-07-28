@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans&family=VT323&display=swap');
 
 * {
     margin: 0;
@@ -54,8 +54,9 @@ h1 {
 
 .corpo {
     width: 355px;
-    height: 350px;
+    height: 477px;
     padding: 20px;
+    margin: 0 auto;
     position: relative;
     align-items: center;
     margin: 125px 500px;
@@ -77,6 +78,7 @@ input {
     color: #000;
     height: 45px;
     outline: none;
+    font-family: 'Open sans', sans-serif;
     align-items: center;
     background-color: #fff;
 }
@@ -85,12 +87,22 @@ textarea {
     color: #000;
     margin-top: 12px;
     border: none;
+    font-family: 'Open sans', sans-serif;
     outline: none;
     height: 100%;
-    max-height: 75px;
+    height: 150px;
+    max-height: 200px;
     border-radius: 8px;
     background-color: #fff;
     resize: vertical;
+}
+
+input::placeholder {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+textarea::placeholder {
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 button {
@@ -114,6 +126,14 @@ button:disabled {
     cursor: auto;
 }
 
+p {
+    background-color: #181920;
+    color: white;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1rem;
+}
+
 footer {
     height: 300px;
     margin-top: 50px;
@@ -121,6 +141,22 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+.social-media {
+    width: 133px;
+    height: 65px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.github {
+    height: 50px;
+}
+
+.discord {
+    height: 50px;
+    border-radius: 10px;
 }
 
 span {
@@ -135,4 +171,48 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .corpo {
+        margin-left: 18px;
+    }
+
+    .social-media {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+    .corpo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .corpo {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    .corpo {
+        margin: 0 auto;
+    }
 }
